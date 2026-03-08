@@ -1,16 +1,22 @@
-# React + Vite
+# 05 - Actividad de implementación de consultas de servicios
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Con la aplicación hecha durante la clase, de forma individual van a implementar el consumo de los servicios para el login y gestión de usuarios
+Los servicios a ocupar serán de la pagina de https://fakestoreapi.com/docs#tag/Users
 
-Currently, two official plugins are available:
+## Instrucciones:
+- 2 rutas sin sesión: Home y Login, las demás estarán protegidas
+- El Login deberá consumir del servicio de autenticación que ofrece la web de fakestoreapi en la vista de usuarios deberá listar en una tabla los usuarios que devuelva el servicio de getAllUsers de fakesotreapi  y un botón para crear nuevos usuarios
+- La tabla de usuarios debe tener 2 botones por usuario
+- el primer boton será para "Ver" -  deberá hacer una navegación a la vista de findOne, y por medio de params recibir el id del usuario seleccionado y consultar su información por medio de un useEffect y el respectivo servicio de fakestoreapi
+- el segundo boton "Borrar" será para borrar al usuario con el respectivo servicio de fakestoreapi
+- el botón para crear usuarios abrirá un "modal" o nos navegara a una nueva vista con un formulario para crear un nuevo usuario 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Criterios de aceptación:
+- Se tomara en cuenta estilos coherentes y estilizados (recomendación en uso de estilo material desing)
+- Deberá hacer uso de componentes modulares y su reutilización, como botones, tablas, inputs, alertas (recomendación  de uso de la dependencia de sweet-alert para alertas)
+- uso de props
+- uso de params
+- uso de useContext y rutas protegidas por wrapper ProtectedRoutes
+- Los formularios deberan estar validados
+- uso de los servicios de fakestoreapi para autenticación, consultar usuarios, borrar usuarios y agregar usuarios
+- proyecto funcional
