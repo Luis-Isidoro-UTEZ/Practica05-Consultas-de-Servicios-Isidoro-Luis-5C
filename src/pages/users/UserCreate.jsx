@@ -78,10 +78,8 @@ function UserCreate() {
                 })
             });
 
-            // Persist locally
             let localUsers = JSON.parse(localStorage.getItem('localUsers') || '[]');
 
-            // Re-fetch users if localStorage is empty
             if (localUsers.length === 0) {
                 const response = await fetch('https://fakestoreapi.com/users');
                 localUsers = await response.json();

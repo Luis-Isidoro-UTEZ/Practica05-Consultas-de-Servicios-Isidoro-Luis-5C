@@ -29,7 +29,7 @@
     font-style: italic;
 }
 
-/* User Create Styles */
+/* UserCreate Styles */
 .user-form-container {
     display: flex;
     justify-content: center;
@@ -57,7 +57,7 @@
     margin-top: 32px;
 }
 
-/* User Find One Styles */
+/* UserFindOne Styles */
 .user-details-id {
     background-color: var(--md-primary);
     color: white;

@@ -16,11 +16,9 @@ function DataTable({ headers, data, renderActions }) {
                     {data.map((item, index) => (
                         <tr key={item.id || index}>
                             {Object.keys(item).map((key, i) => {
-                                // We skip internal objects like 'address' or 'name' if not handled
                                 if (typeof item[key] === 'object' && item[key] !== null) return null;
                                 return <td key={i}>{item[key]}</td>;
                             })}
-                            {/* Custom mapping for User specific data if item structure is complex */}
                             {item.name && (
                                 <td>{item.name.firstname} {item.name.lastname}</td>
                             )}
