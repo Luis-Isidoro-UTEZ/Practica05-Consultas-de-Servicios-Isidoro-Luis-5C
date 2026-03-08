@@ -1,0 +1,35 @@
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    border-radius: 8px;
+    border: 1px solid var(--md-surface-variant);
+}
+
+.md-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--md-surface);
+}
+
+.md-table th {
+    background-color: #F1F3F9;
+    text-align: left;
+    padding: 14px 16px;
+    color: var(--md-on-surface-variant);
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid var(--md-surface-variant);
+}
+
+.md-table td {
+    padding: 14px 16px;
+    font-size: 14px;
+    color: var(--md-on-surface);
+    border-bottom: 1px solid var(--md-surface-variant);
+}
+
+.md-table tr:hover td {
+    background-color: #F8F9FF;
+}

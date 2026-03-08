@@ -1,0 +1,35 @@
+.home-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--md-background);
+    text-align: center;
+    padding: 24px;
+    animation: fadeIn 0.6s ease-out;
+}
+
+.home-card {
+    max-width: 500px;
+    width: 100%;
+}
+
+.home-title {
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 16px;
+    color: var(--md-primary);
+}
+
+.home-description {
+    color: var(--md-on-surface-variant);
+    margin-bottom: 32px;
+    line-height: 1.6;
+}
+
+.home-actions {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}

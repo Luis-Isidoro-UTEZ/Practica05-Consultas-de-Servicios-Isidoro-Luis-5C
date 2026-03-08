@@ -1,0 +1,92 @@
+.user-list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.user-list-title {
+    margin: 0;
+    font-size: 24px;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
+
+.action-btn {
+    height: 30px !important;
+    padding: 0 12px !important;
+    font-size: 12px !important;
+}
+
+.empty-state {
+    text-align: center;
+    padding: 40px;
+    color: var(--md-on-surface-variant);
+    font-style: italic;
+}
+
+/* User Create Styles */
+.user-form-container {
+    display: flex;
+    justify-content: center;
+}
+
+.user-form-card {
+    width: 100%;
+    max-width: 600px;
+}
+
+.user-form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.user-form-row {
+    margin: 16px 0;
+}
+
+.user-form-actions {
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end;
+    margin-top: 32px;
+}
+
+/* User Find One Styles */
+.user-details-id {
+    background-color: var(--md-primary);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.user-details-divider {
+    height: 1px;
+    background-color: var(--md-surface-variant);
+    margin: 24px 0;
+}
+
+.user-details-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+}
+
+.user-details-info-group {
+    margin-bottom: 20px;
+}
+
+.user-details-address-box {
+    margin-top: 24px;
+    padding: 16px;
+    background-color: var(--md-background);
+    border-radius: 8px;
+    border: 1px solid var(--md-surface-variant);
+}

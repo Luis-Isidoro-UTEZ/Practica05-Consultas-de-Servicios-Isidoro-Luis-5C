@@ -1,0 +1,62 @@
+:root {
+    --md-primary: #191970;
+    /* Midnight Blue */
+    --md-on-primary: #FFFFFF;
+    --md-primary-container: #E0E0FF;
+    --md-on-primary-container: #000040;
+    --md-secondary: #5A5A70;
+    --md-on-secondary: #FFFFFF;
+    --md-error: #B3261E;
+    --md-on-error: #FFFFFF;
+    --md-background: #F8F9FA;
+    --md-on-background: #1C1B1F;
+    --md-surface: #FFFFFF;
+    --md-on-surface: #1C1B1F;
+    --md-surface-variant: #E1E2EC;
+    --md-on-surface-variant: #44474E;
+    --md-outline: #74777F;
+    --elevation-1: 0px 1px 3px 1px rgba(0, 0, 0, 0.15), 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+    --elevation-2: 0px 2px 6px 2px rgba(0, 0, 0, 0.15), 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: var(--md-background);
+    color: var(--md-on-background);
+    line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--md-primary);
+    margin-top: 0;
+}
+
+.layout-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    flex: 1;
+    padding: 32px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: var(--md-surface);
+    border-radius: 12px;
+    box-shadow: var(--elevation-1);
+    padding: 24px;
+    margin-bottom: 24px;
+    border: 1px solid var(--md-surface-variant);
+}
